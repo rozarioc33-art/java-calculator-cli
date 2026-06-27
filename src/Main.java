@@ -32,21 +32,21 @@ public class Main {
                     System.out.println("Substraction");
                     int sub = cal.sub(a, b);
                     System.out.println("Difference: " +sub);
-                    cal.repeatPrompt(sc);
+                    repeat = cal.repeatPrompt(sc);
                     chk = false;
                     break;
                 case 3:
                     System.out.println("Multiplication");
                     int mul = cal.multiply(a, b);
                     System.out.println("Multiplication: " +mul);
-                    cal.repeatPrompt(sc);
+                    repeat = cal.repeatPrompt(sc);
                     chk = false;
                     break;
                 case 4:
                     System.out.println("Division");
                     int div = cal.divide(a, b);
                     System.out.println("Division: " +div);
-                    cal.repeatPrompt(sc);
+                    repeat = cal.repeatPrompt(sc);
                     chk = false;
                     break;
                 default:
@@ -54,5 +54,7 @@ public class Main {
                     chk = true;
             }
         } while(chk || repeat);
+
+        System.out.println("Exiting...");
     }
 }

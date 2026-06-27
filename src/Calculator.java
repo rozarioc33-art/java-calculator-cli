@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Calculator {
     int a;
     int b;
@@ -28,9 +26,9 @@ public class Calculator {
         return a / b;
     }
 
-    public boolean repeatPrompt(Scanner sc) {
+    public boolean repeatPrompt() {
         System.out.println("Do you want to continue? \n 1. Yes \n 2. No");
-        int ch = sc.nextInt();
+        int ch = UserPrompt.userInput();
         if (ch == 1) {
             System.out.println("Yes...");
             return true;
