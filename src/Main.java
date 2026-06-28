@@ -55,5 +55,6 @@ public class Main {
         } while(chk || repeat);
 
         System.out.println("Exiting...");
+        UserPrompt.close();
     }
 }

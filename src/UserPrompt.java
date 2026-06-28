@@ -7,4 +7,8 @@ public class UserPrompt {
     public static int userInput() {
         return sc.nextInt();
     }
+
+    public static void close() {
+        sc.close();
+    }
 }
