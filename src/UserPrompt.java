@@ -2,11 +2,13 @@ import java.util.Scanner;
 
 public class UserPrompt {
 
-    public static int userInput() {
+    private static Scanner sc;
 
-        Scanner sc = new Scanner(System.in);
-        return sc.nextInt();
+    public static Scanner getInstance() {
+
+        if(sc == null) {
+            sc = new Scanner(System.in);
+        }
+        return sc;
     }
-
-
 }
