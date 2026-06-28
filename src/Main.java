@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -24,34 +23,31 @@ public class Main {
                     System.out.println("Addition");
                     int sum = cal.add(a, b);
                     System.out.println("Sum: " +sum);
-                    repeat = cal.repeatPrompt();
-                    chk = false;
                     break;
                 case 2:
                     System.out.println("Substraction");
                     int sub = cal.sub(a, b);
                     System.out.println("Difference: " +sub);
-                    repeat = cal.repeatPrompt();
-                    chk = false;
                     break;
                 case 3:
                     System.out.println("Multiplication");
                     int mul = cal.multiply(a, b);
                     System.out.println("Multiplication: " +mul);
-                    repeat = cal.repeatPrompt();
-                    chk = false;
                     break;
                 case 4:
                     System.out.println("Division");
                     int div = cal.divide(a, b);
                     System.out.println("Division: " +div);
-                    repeat = cal.repeatPrompt();
-                    chk = false;
                     break;
                 default:
                     System.out.println("Enter a valid choice....!");
                     chk = true;
             }
+
+            if (!chk) {
+                repeat = cal.repeatPrompt();
+            }
+
         } while(chk || repeat);
 
         System.out.println("Exiting...");
